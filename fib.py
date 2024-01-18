@@ -6,6 +6,10 @@ The zeroth number in the fibonacci sequence is 0. The first number is 1
 Negative numbers should return None
 """
 def fibonacci(position):
+    # Handle edge cases
+    if position < 0: return None
+
+    # Base Cases
     if position == 0: return 0
     elif position == 1: return 1
 
